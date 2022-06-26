@@ -22,5 +22,23 @@ Exemplo de arquivo de instalação: “Docker_Desktop_Installer.exe”
 
 Abra um terminal de comandos e digite os comandos abaixo:
 
+|docker run --name sqlserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=qj8F*J@9'  -e 'TZ=America/Sao_Paulo' -p 1433:1433 -v C:\bkp_sqlserver\:/var/bkp_sqlserver/ -d mcr.microsoft.com/mssql/server:2019-latest| 
+| :--- | 
 
+ 
+| Variáveis                  |                                                                                                         |
+| :---                       | :---                                                                                                    |
+| docker run                 | Cria e executa o container Docker.                                                                      |
+| --name=sqlserver           | Especifica o nome do container a ser gerado.                                                            |
+| -e 'ACCEPT_EULA=Y'         | Aceita os termos de licença da Microsoft.                                                               |
+| -e 'SA_PASSWORD=qj8F*J@9'  | Foi indicada a senha do administrador usuário SA.                                                       |
+| -e 'TZ=America/Sao_Paulo'  | TimeZone (Fuso Horário Brasil) da imagem docker.                                                        |
+| -p 1433:1433               | Mapeia a porta 1433 do contêiner para porta 1433 do host.                                               |
+| -d                         | Mapeia a porta 1433 do contêiner para porta 1433 do host.                                               |
+| -v                         | Mapeamento de volume.                                                                                   |
+| mcr.microsoft.com/mssql/server:2019-latest  mcr.microsoft.com/mssql/server:2022-latest | Nome da imagem usada para criar o contêiner.|
+
+## Passo 3: Conexão via SQL Server Management Studio.
+
+Para a conexão via SQL Server Management Studio informar em Server name o servidor (neste caso localhost), além das credenciais de acesso nos campos Login e Password:
 
