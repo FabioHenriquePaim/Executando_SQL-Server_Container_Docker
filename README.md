@@ -11,3 +11,16 @@ Este tutorial tem por objetivo demonstrar a instalação e uso do SQL Server a p
 
 #### [Executar imagens de contêiner do SQL Server Linux com o Docker](https://hub.docker.com/_/microsoft-mssql-server)
 #### [Microsoft SQL Server](https://hub.docker.com/_/microsoft-mssql-server)
+
+## Passo 1: Baixando Docker  Windows.
+
+O [Docker for Windows](https://www.docker.com/docker-windows/), que permitirá a criação de imagens e containers para testes em máquinas de desenvolvimento baseadas no Windows
+
+Exemplo de arquivo de instalação: “Docker_Desktop_Installer.exe”
+
+## Passo 2: Criação de um container baseado na imagem do SQL Server.
+
+Abra um terminal de comandos e digite os comandos abaixo:
+
+
+
