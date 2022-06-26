@@ -42,3 +42,4 @@ Abra um terminal de comandos e digite os comandos abaixo:
 
 Para a conexão via SQL Server Management Studio informar em Server name o servidor (neste caso localhost), além das credenciais de acesso nos campos Login e Password:
 
+![image](img/conexao_sql_server.png)
