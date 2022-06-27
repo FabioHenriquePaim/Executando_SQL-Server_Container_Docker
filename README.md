@@ -42,17 +42,42 @@ Abra um terminal de comandos e digite os comandos abaixo:
 | -v                         | Mapeamento de volume.                                                                                   |
 | mcr.microsoft.com/mssql/server:2019-latest  mcr.microsoft.com/mssql/server:2022-latest | Nome da imagem usada para criar o contêiner.|
 
-## Passo 3: Conexão via SQL Server Management Studio.
+## Passo 3: Backup banco de dados.
+
+Adicione seu arquivo de backup "backup.bak" na pasta do seu windows "C:\bkp_sqlserver" conforme criado no passo 2 "-v C:\bkp_sqlserver\:/var/bkp_sqlserver/"
+
+![bkp_sql_server.png](img/bkp_sql_server.png)
+
+
+## Passo 3.1: Conexão via SQL Server Management Studio.
 
 Para a conexão via SQL Server Management Studio informar em Server name o servidor (neste caso localhost), além das credenciais de acesso nos campos Login e Password:
 
 ![conexao_sql_server.png](img/conexao_sql_server.png)
 
-## Passo 3.1: Restaurando banco de dados (RESTORE).
+## Passo 3.2 Restaurando banco de dados (RESTORE).
 
-Adicione seu arquivo de backup "backup.bak" na pasta do seu windows "C:\bkp_sqlserver" conforme criado no passo 2 "-v C:\bkp_sqlserver\:/var/bkp_sqlserver/"
+01) Clique com o botão direito em “Database” e selecione a opção “Restore Database”.
 
-![bkp_sql_server.png](img/bkp_sql_server.png)
+02) A janela “Restore Database” será exibida. Nela, marque a opção “Device” e clique no botão “…” para fazer a busca do arquivo de Backup Banco de dados que será utilizado para restaurar.
+
+03) Nesta janela selecione se o banco de dados a ser restaurado é um arquivo de Backup, em seguida, clique em “Add” e selecione o arquivo.
+
+04) Selecione o arquivo de Backup e clique em “Ok”.
+
+05) Ao término deste procedimento, o caminho do seu Backup estará destacado, e por fim, clique em Ok.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
