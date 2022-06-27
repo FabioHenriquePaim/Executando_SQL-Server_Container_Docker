@@ -59,13 +59,23 @@ Para a conexão via SQL Server Management Studio informar em Server name o servi
 
 01) Clique com o botão direito em “Database” e selecione a opção “Restore Database”.
 
+![conexao_sql_server_01.png](img/bkp_sql_server_01.png)
+
 02) A janela “Restore Database” será exibida. Nela, marque a opção “Device” e clique no botão “…” para fazer a busca do arquivo de Backup Banco de dados que será utilizado para restaurar.
+
+![bkp_sql_server_02.png](img/bkp_sql_server_02.png)
 
 03) Nesta janela selecione se o banco de dados a ser restaurado é um arquivo de Backup, em seguida, clique em “Add” e selecione o arquivo.
 
+![bkp_sql_server_03.png](img/bkp_sql_server_03.png)
+
 04) Selecione o arquivo de Backup e clique em “Ok”.
 
+![bkp_sql_server_04.png](img/bkp_sql_server_04.png)
+
 05) Ao término deste procedimento, o caminho do seu Backup estará destacado, e por fim, clique em Ok.
+
+![bkp_sql_server_05.png](img/bkp_sql_server_05.png)
 
 
 
