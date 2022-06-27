@@ -33,7 +33,7 @@ Abra um terminal de comandos e digite os comandos abaixo:
 | Variáveis                  |                                                                                                         |
 | :---                       | :---                                                                                                    |
 | docker run                 | Cria e executa o container Docker.                                                                      |
-| --name=sqlserver2022           | Especifica o nome do container a ser gerado.                                                            |
+| --name=sqlserver2022       | Especifica o nome do container a ser gerado.                                                            |
 | -e 'ACCEPT_EULA=Y'         | Aceita os termos de licença da Microsoft.                                                               |
 | -e 'SA_PASSWORD=qj8F*J@9'  | Foi indicada a senha do administrador usuário SA.                                                       |
 | -e 'TZ=America/Sao_Paulo'  | TimeZone (Fuso Horário Brasil) da imagem docker.                                                        |
@@ -47,3 +47,12 @@ Abra um terminal de comandos e digite os comandos abaixo:
 Para a conexão via SQL Server Management Studio informar em Server name o servidor (neste caso localhost), além das credenciais de acesso nos campos Login e Password:
 
 ![conexao_sql_server.png](img/conexao_sql_server.png)
+
+## Passo 3.1: Restaurando banco de dados (RESTORE).
+
+Adicione seu arquivo de backup "backup.bak" na pasta do seu windows "C:\bkp_sqlserver" conforme criado no passo 2 "-v C:\bkp_sqlserver\:/var/bkp_sqlserver/"
+
+![bkp_sql_server.png](img/bkp_sql_server.png)
+
+
+
